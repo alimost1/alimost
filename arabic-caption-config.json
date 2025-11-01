@@ -1,0 +1,162 @@
+{
+  "improved_arabic_caption_config": {
+    "video_url": "{{ $('Crop and Scale Clip').item.json.response[0].file_url }}",
+    "settings": {
+      "line_color": "#FFFFFF",
+      "word_color": "#FFD700",
+      "all_caps": false,
+      "max_words_per_line": 3,
+      "font_size": 100,
+      "bold": true,
+      "italic": false,
+      "underline": false,
+      "strikeout": false,
+      "outline_width": 4,
+      "outline_color": "#000000",
+      "shadow_offset": 2,
+      "shadow_color": "#000000",
+      "shadow_opacity": 0.8,
+      "style": "highlight",
+      "font_family": "Cairo",
+      "font_family_fallback": ["Noto Sans Arabic", "Tajawal", "Dubai", "Arial"],
+      "position": "bottom_center",
+      "margin_bottom": 80,
+      "text_align": "center",
+      "text_direction": "rtl",
+      "line_height": 1.4,
+      "letter_spacing": 0,
+      "background_opacity": 0.85,
+      "animation": {
+        "type": "word_by_word",
+        "duration": 0.3,
+        "ease": "ease-out"
+      }
+    },
+    "id": "{{ $json.id }}"
+  },
+  "presets": {
+    "minimal_clean": {
+      "description": "Clean, minimal style with subtle effects",
+      "settings": {
+        "line_color": "#FFFFFF",
+        "word_color": "#FFFFFF",
+        "max_words_per_line": 4,
+        "font_size": 90,
+        "bold": true,
+        "outline_width": 5,
+        "outline_color": "#000000",
+        "shadow_offset": 0,
+        "style": "simple",
+        "font_family": "Cairo",
+        "position": "bottom_center",
+        "margin_bottom": 100,
+        "text_direction": "rtl",
+        "background_opacity": 0
+      }
+    },
+    "high_contrast": {
+      "description": "High contrast for better readability",
+      "settings": {
+        "line_color": "#FFFFFF",
+        "word_color": "#FFA500",
+        "max_words_per_line": 2,
+        "font_size": 110,
+        "bold": true,
+        "outline_width": 6,
+        "outline_color": "#000000",
+        "shadow_offset": 3,
+        "shadow_color": "#000000",
+        "style": "highlight",
+        "font_family": "Tajawal",
+        "position": "bottom_center",
+        "margin_bottom": 80,
+        "text_direction": "rtl",
+        "line_height": 1.5
+      }
+    },
+    "modern_elegant": {
+      "description": "Modern and elegant style for professional content",
+      "settings": {
+        "line_color": "#F8F8F8",
+        "word_color": "#FFD700",
+        "max_words_per_line": 3,
+        "font_size": 95,
+        "bold": false,
+        "outline_width": 3,
+        "outline_color": "#1A1A1A",
+        "shadow_offset": 2,
+        "shadow_color": "#000000",
+        "shadow_opacity": 0.6,
+        "style": "highlight",
+        "font_family": "Dubai",
+        "position": "bottom_center",
+        "margin_bottom": 90,
+        "text_direction": "rtl",
+        "line_height": 1.35,
+        "background_opacity": 0.75
+      }
+    },
+    "social_media": {
+      "description": "Optimized for social media (Instagram, TikTok, etc.)",
+      "settings": {
+        "line_color": "#FFFFFF",
+        "word_color": "#FF1493",
+        "max_words_per_line": 2,
+        "font_size": 105,
+        "bold": true,
+        "outline_width": 5,
+        "outline_color": "#000000",
+        "shadow_offset": 2,
+        "style": "highlight",
+        "font_family": "Cairo",
+        "position": "center",
+        "text_direction": "rtl",
+        "animation": {
+          "type": "bounce",
+          "duration": 0.4
+        }
+      }
+    },
+    "educational": {
+      "description": "Clear and readable for educational content",
+      "settings": {
+        "line_color": "#FFFFFF",
+        "word_color": "#4CAF50",
+        "max_words_per_line": 4,
+        "font_size": 85,
+        "bold": true,
+        "outline_width": 4,
+        "outline_color": "#000000",
+        "shadow_offset": 2,
+        "style": "highlight",
+        "font_family": "Noto Sans Arabic",
+        "position": "bottom_center",
+        "margin_bottom": 70,
+        "text_direction": "rtl",
+        "line_height": 1.6
+      }
+    }
+  },
+  "font_recommendations": {
+    "best_for_arabic": [
+      "Cairo - Modern and highly readable",
+      "Tajawal - Clean and professional",
+      "Dubai - Elegant and smooth",
+      "Noto Sans Arabic - Universal compatibility",
+      "Amiri - Traditional and beautiful",
+      "Markazi Text - Compact and clear"
+    ]
+  },
+  "optimization_tips": [
+    "Use 2-4 words per line for better Arabic readability",
+    "Ensure RTL (right-to-left) text direction is enabled",
+    "Use strong outline (4-6px) for visibility on any background",
+    "Keep shadow offset subtle (2-3px) to avoid clutter",
+    "Use Cairo or Tajawal fonts for modern Arabic content",
+    "High contrast colors improve readability (white text + dark outline)",
+    "Position captions with adequate bottom margin (80-100px)",
+    "Line height of 1.4-1.6 improves multi-line readability",
+    "Avoid all_caps as it doesn't work well with Arabic script",
+    "Test on mobile devices as most Arabic content is viewed there"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "video_url": "{{ $('Crop and Scale Clip').item.json.response[0].file_url }}",
+  "settings": {
+    "line_color": "#FFFFFF",
+    "word_color": "#FFD700",
+    "all_caps": false,
+    "max_words_per_line": 3,
+    "font_size": 100,
+    "bold": true,
+    "italic": false,
+    "underline": false,
+    "strikeout": false,
+    "outline_width": 4,
+    "outline_color": "#000000",
+    "shadow_offset": 2,
+    "shadow_color": "#000000",
+    "shadow_opacity": 0.8,
+    "style": "highlight",
+    "font_family": "Cairo",
+    "font_family_fallback": ["Noto Sans Arabic", "Tajawal", "Dubai", "Arial"],
+    "position": "bottom_center",
+    "margin_bottom": 80,
+    "text_align": "center",
+    "text_direction": "rtl",
+    "line_height": 1.4,
+    "letter_spacing": 0,
+    "background_opacity": 0.85,
+    "animation": {
+      "type": "word_by_word",
+      "duration": 0.3,
+      "ease": "ease-out"
+    }
+  },
+  "id": "{{ $json.id }}"
+}
